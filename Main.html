@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Vanh dz</title>
+</head>
+<body>
+<div id="page1">
+  <button onclick="goToPage2()">Click vào đây</button>
+</div>
+<div id="page2" style="display:none;">
+  <p>Quang có Gay không=))?</p>
+  <button onclick="showResult('Có')">OMG 💀</button>
+  <button onclick="showResult('Không')">Điều rất bth</button>
+  <p id="result"></p>
+</div>
+<script>
+  function goToPage2() {
+    document.getElementById('page1').style.display = 'none';
+    document.getElementById('page2').style.display = 'block';
+  }
+  function showResult(answer) {
+    document.getElementById('result').textContent = 'Vanh: ' + answer;
+  }
+</script>
+</body>
+</html>
